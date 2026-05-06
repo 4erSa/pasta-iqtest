@@ -119,7 +119,7 @@ const QUESTIONS = [
       { text: "Opera 7", points: 80 },
       { text: "Internet Explorer 6 (Бог)", points: 200 },
       { text: "Бумажная почта", points: 100 },
-      { text: "Тот, который не виснет при загрузке картинок с голыми женщинами", points: 150 }
+      { text: "Тот, который не виснет", points: 150 }
     ]
   },
   {
@@ -201,6 +201,159 @@ const QUESTIONS = [
       { text: "Случайный скрипт", points: 100 },
       { text: "Ты, если нажмешь Alt+F4", points: 180 }
     ]
+  },
+  {
+    question: "Где хранится вчерашний сон?",
+    answers: [
+      { text: "В голове", points: 5 },
+      { text: "В облаке", points: 150 },
+      { text: "Под подушкой", points: 80 },
+      { text: "Его удалили", points: 200 }
+    ]
+  },
+  {
+    question: "Сколько раз холодильник думает о смысле жизни?",
+    answers: [
+      { text: "Никогда", points: 10 },
+      { text: "Когда открыт", points: 70 },
+      { text: "2 раза в день", points: 120 },
+      { text: "Пока гудит", points: 180 }
+    ]
+  },
+  {
+    question: "Сколько стоит один «ой»?",
+    answers: [
+      { text: "Бесплатно", points: 10 },
+      { text: "10 тенге", points: 50 },
+      { text: "Зависит от ситуации", points: 130 },
+      { text: "Один «ай»", points: 190 }
+    ]
+  },
+  {
+    question: "Сколько секунд длится «подожди»?",
+    answers: [
+      { text: "1", points: 5 },
+      { text: "10", points: 30 },
+      { text: "Вечно", points: 200 },
+      { text: "Неопределённо", points: 120 }
+    ]
+  },
+  {
+    question: "Где находится «потом»?",
+    answers: [
+      { text: "В будущем", points: 20 },
+      { text: "В голове", points: 60 },
+      { text: "Никогда", points: 200 },
+      { text: "Потерялось", points: 150 }
+    ]
+  },
+  {
+    question: "Почему холодильник шумит ночью?",
+    answers: [
+      { text: "Работает", points: 10 },
+      { text: "Разговаривает", points: 150 },
+      { text: "Он главный", points: 120 },
+      { text: "Он один не спит", points: 180 }
+    ]
+  },
+  {
+    question: "Почему стул не спорит?",
+    answers: [
+      { text: "Он уверен", points: 110 },
+      { text: "Он молчит", points: 40 },
+      { text: "Он занят", points: 70 },
+      { text: "Он всегда прав", points: 160 }
+    ]
+  },
+  {
+    question: "Что делает нос, когда ты думаешь?",
+    answers: [
+      { text: "Дышит", points: 10 },
+      { text: "Помогает", points: 100 },
+      { text: "Ждёт", points: 50 },
+      { text: "Участвует", points: 150 }
+    ]
+  },
+  {
+    question: "Где находится «ещё чуть-чуть»?",
+    answers: [
+      { text: "Рядом", points: 40 },
+      { text: "Далеко", points: 100 },
+      { text: "В процессе", points: 120 },
+      { text: "Не существует", points: 200 }
+    ]
+  },
+  {
+    question: "Почему кнопка не убегает?",
+    answers: [
+      { text: "Она закреплена", points: 30 },
+      { text: "Ей лень", points: 140 },
+      { text: "Она часть системы", points: 110 },
+      { text: "Она пыталась", points: 200 }
+    ]
+  },
+  {
+    question: "Сколько длится «секундочку»?",
+    answers: [
+      { text: "1 секунда", points: 10 },
+      { text: "5 секунд", points: 50 },
+      { text: "Зависит", points: 130 },
+      { text: "Долго", points: 180 }
+    ]
+  },
+  {
+    question: "Почему «да» звучит уверенно?",
+    answers: [
+      { text: "Потому что да", points: 100 },
+      { text: "Оно такое", points: 40 },
+      { text: "Это факт", points: 90 },
+      { text: "Так решили", points: 120 }
+    ]
+  },
+  {
+    question: "Где заканчивается «ладно»?",
+    answers: [
+      { text: "В согласии", points: 70 },
+      { text: "В споре", points: 110 },
+      { text: "В конце", points: 90 },
+      { text: "Неизвестно", points: 150 }
+    ]
+  },
+  {
+    question: "Что самое важное в этом тесте?",
+    answers: [
+      { text: "Ответы", points: 20 },
+      { text: "Вопросы", points: 30 },
+      { text: "Паста", points: 300 },
+      { text: "Ничего", points: 150 }
+    ]
+  },
+  {
+    question: "Почему самолет не падает?",
+    answers: [
+      { text: "Магия авиакомпаний", points: 150 },
+      { text: "Пилоты очень хорошо просят", points: 180 },
+      { text: "Законы физики (скучно)", points: -50 },
+      { text: "Он боится паники", points: 130 }
+    ]
+  },
+  {
+    question: "Стихотворение ChatGPT про картошку?",
+    answers: [
+      { text: "Будет шедевром", points: 100 },
+      { text: "Это овощ, а не поэзия", points: 80 },
+      { text: "Выдаст рецепт пюре", points: 150 },
+      { text: "Все будет про Машу", points: 220 }
+    ]
+  },
+  {
+    question: "Самый сложный язык?",
+    answers: [
+      { text: "Китайский", points: 60 },
+      { text: "Русский", points: 50 },
+      { text: "Язык кошек", points: 200 },
+      { text: "Язык инструкций", points: 180 }
+    ]
   }
 ];
 
@@ -212,6 +365,7 @@ const VisitorCounter = () => {
     }, 3000);
     return () => clearInterval(timer);
   }, []);
+
   return (
     <div className="visitor-counter">
       ВЫ ПОСЕТИТЕЛЬ №<span className="count-digits">{count.toString().padStart(8, '0')}</span>
@@ -285,7 +439,7 @@ const VintageVideoPlayer = ({ url }) => {
         <div className="vmp-controls-top">
           <button className="vmp-min">_</button>
           <button className="vmp-max">[]</button>
-          <button className="vmp-close" onClick={() => alert("ОШИБКА: Видео слишком важное, чтобы его закрывать!")}>X</button>
+          <button className="vmp-close" onClick={() => alert("ОШИБКА: Видео слишком важное!")}>X</button>
         </div>
       </div>
       <div className="vmp-video-area">
@@ -332,61 +486,27 @@ const App = () => {
 
   useEffect(() => {
     let ws;
-
     try {
       ws = new WebSocket("wss://xd.teeworlds.qzz.io/");
-
-      ws.onopen = () => {
-        console.log("WebSocket connected");
-      };
-
       ws.onmessage = (event) => {
         try {
           const data = JSON.parse(event.data);
-
           if (data.type === "video") {
             setActiveVideo(data.url);
-
             if (data.duration) {
-              setTimeout(() => {
-                setActiveVideo(null);
-              }, data.duration);
+              setTimeout(() => setActiveVideo(null), data.duration);
             }
           } else {
-            setNotifications((prev) => [
-              ...prev,
-              {
-                id: Date.now(),
-                title: data.title,
-                message: data.message,
-              },
-            ]);
+            setNotifications((prev) => [...prev, { 
+              id: Date.now(), 
+              title: data.title, 
+              message: data.message 
+            }]);
           }
-        } catch (e) {
-          console.error("Failed to parse WS message", e);
-        }
+        } catch (e) { console.error("WS Parse error", e); }
       };
-
-      ws.onerror = (e) => {
-        console.error("WebSocket error:", e);
-      };
-
-      ws.onclose = (e) => {
-        console.warn("WebSocket closed:", {
-          code: e.code,
-          reason: e.reason,
-          wasClean: e.wasClean,
-        });
-      };
-    } catch (err) {
-      console.error("WebSocket connection failed:", err);
-    }
-
-    return () => {
-      if (ws && ws.readyState === WebSocket.OPEN) {
-        ws.close();
-      }
-    };
+    } catch (err) { console.error("WS Connection error", err); }
+    return () => ws?.close();
   }, []);
 
   const removeNotification = (id) => {
@@ -394,22 +514,10 @@ const App = () => {
   };
 
   const loadingPhrases = [
-    "Сканируем лоб...",
-    "Подключаемся к спутнику...",
-    "Сравниваем с картошкой...",
-    "Загружаем интеллект через dial-up...",
-    "Проверяем, моргнул ли мозг...",
-    "Анализируем историю браузера (о боже...)...",
-    "Дефрагментация извилин...",
-    "Поиск следов разума...",
-    "Связь с астралом установлена..."
+    "Сканируем лоб...", "Подключаемся к спутнику...", 
+    "Загружаем интеллект через dial-up...", "Проверяем, моргнул ли мозг...",
+    "Дефрагментация извилин...", "Связь с астралом установлена..."
   ];
-
-  const startTest = () => {
-    setStep('test');
-    setCurrentQuestion(0);
-    setScore(0);
-  };
 
   const handleAnswer = (points) => {
     setScore(prev => prev + points);
@@ -430,24 +538,11 @@ const App = () => {
 
     setTimeout(() => {
       clearInterval(interval);
-      calculateResult();
+      const baseIq = 50;
+      const randomFactor = Math.floor(Math.random() * 40) - 20;
+      setIqResult(Math.floor((score / 20) + baseIq + randomFactor));
+      setStep('result');
     }, 4000);
-  };
-
-  const calculateResult = () => {
-    // Arbitrary calculation
-    const baseIq = 50;
-    const randomFactor = Math.floor(Math.random() * 40) - 20;
-    const finalIq = Math.floor((score / 10) + baseIq + randomFactor);
-    setIqResult(finalIq);
-    setStep('result');
-  };
-
-  const getComment = (iq) => {
-    if (iq < 40) return "Ты не проиграл. Ты просто загрузился в демо-режиме.";
-    if (iq < 90) return "Нормально. Почти как калькулятор без батареек.";
-    if (iq < 140) return "Опасно. Ты начал понимать интерфейс этого сайта.";
-    return "Ошибка: мозг пользователя несовместим с HTML 4.01.";
   };
 
   return (
@@ -455,24 +550,19 @@ const App = () => {
       <header className="site-header">
         <h1 className="blink-text rainbow-text">IQ TEST 2003: ПРОВЕРЬ СВОЙ МОЗГ</h1>
         <div className="marquee">
-          <p>*** САМЫЙ ТОЧНЫЙ ТЕСТ В МИРЕ! ОДОБРЕНО НЕИЗВЕСТНЫМИ УЧЕНЫМИ! *** СКАЧАЙ БЕСПЛАТНО RAM! *** ТВОЙ IQ УЖЕ РАССЧИТАН! ***</p>
+          <marquee scrollamount="10">*** САМЫЙ ТОЧНЫЙ ТЕСТ В МИРЕ! ОДОБРЕНО НЕИЗВЕСТНЫМИ УЧЕНЫМИ! ***</marquee>
         </div>
       </header>
 
       <div className="content-wrapper">
         <aside className="sidebar left">
-          <div className="banner-box spin">
-            <p>100% НАУЧНО</p>
-          </div>
-          <div className="banner-box shake">
-            <p>СКАЧАЙ RAM</p>
-          </div>
+          <div className="banner-box spin"><p>100% НАУЧНО</p></div>
+          <div className="banner-box shake"><p>СКАЧАЙ RAM</p></div>
           <div className="news-block">
             <h3>НОВОСТИ</h3>
             <ul>
-              <li>13.04.2003: Мы добавили мозг.</li>
-              <li>14.04.2003: Мозг удалён из-за багов.</li>
-              <li>15.04.2003: Тест стал точнее на 0.0001%.</li>
+              <li>13.04.2003: Добавили мозг.</li>
+              <li>14.04.2003: Мозг удалён.</li>
             </ul>
           </div>
         </aside>
@@ -481,8 +571,7 @@ const App = () => {
           {step === 'start' && (
             <div className="start-screen">
               <h2 className="pulse">ТЕСТ НАСТОЛЬКО ТОЧНЫЙ, ЧТО МЫ САМИ ИСПУГАЛИСЬ</h2>
-              <p className="ascii-art">
-                {`
+              <pre className="ascii-art">{`
       _      
      ( )     
     (   )    
@@ -491,43 +580,24 @@ const App = () => {
     /   \\
    |  IQ  |
     \\___/
-                `}
-              </p>
-              <div className="certified-badge">
-                <p>CERTIFIED BY:</p>
-                <div className="badge-grid">
-                  <span>[W3C HTML 4.01]</span>
-                  <span>[ICQ OK]</span>
-                  <span>[MADE IN NOTEPAD]</span>
-                </div>
-              </div>
-              <button className="win-btn start-btn" onClick={startTest}>
-                НАЧАТЬ ИНТЕЛЛЕКТУАЛЬНОЕ СТРАДАНИЕ
+              `}</pre>
+              <button className="win-btn start-btn" onClick={() => setStep('test')}>
+                НАЧАТЬ СТРАДАНИЕ
               </button>
               <VisitorCounter />
-              <div className="warning-box">
-                <p>ВНИМАНИЕ: Во время теста не рекомендуется думать, это может привести к перегреву модема.</p>
-              </div>
             </div>
           )}
 
           {step === 'test' && (
             <div className="question-screen">
               <div className="progress-bar-container">
-                <div
-                  className="progress-bar-fill"
-                  style={{ width: `${((currentQuestion + 1) / QUESTIONS.length) * 100}%` }}
-                ></div>
+                <div className="progress-bar-fill" style={{ width: `${((currentQuestion + 1) / QUESTIONS.length) * 100}%` }}></div>
               </div>
-              <p className="question-counter">Вопрос {currentQuestion + 1} из {QUESTIONS.length}</p>
+              <p>Вопрос {currentQuestion + 1} из {QUESTIONS.length}</p>
               <h2 className="question-text">{QUESTIONS[currentQuestion].question}</h2>
               <div className="answers-list">
                 {QUESTIONS[currentQuestion].answers.map((ans, idx) => (
-                  <button
-                    key={idx}
-                    className="win-btn answer-btn"
-                    onClick={() => handleAnswer(ans.points)}
-                  >
+                  <button key={idx} className="win-btn answer-btn" onClick={() => handleAnswer(ans.points)}>
                     {ans.text}
                   </button>
                 ))}
@@ -539,10 +609,6 @@ const App = () => {
             <div className="loading-screen">
               <div className="loader-icon spin"></div>
               <p className="loading-text">{loadingText}</p>
-              <div className="fake-status">
-                <p>Status: ANALYZING_EXISTENCE...</p>
-                <p>Speed: 56 kbps</p>
-              </div>
             </div>
           )}
 
@@ -553,116 +619,38 @@ const App = () => {
                 <p>ВАШ IQ:</p>
                 <h1 className="iq-number rainbow-text">{iqResult}</h1>
               </div>
-              <div className="comment-box">
-                <p>{getComment(iqResult)}</p>
-              </div>
-              <button className="win-btn restart-btn" onClick={() => setStep('start')}>
-                ПРОЙТИ ЕЩЁ РАЗ И СТАТЬ УМНЕЕ НА 0%
-              </button>
-              <div className="share-section">
-                <p>Похвастаться в ICQ:</p>
-                <button className="win-btn small-btn">Отправить 123456789</button>
-              </div>
+              <button className="win-btn restart-btn" onClick={() => setStep('start')}>ПРОЙТИ ЕЩЁ РАЗ</button>
             </div>
           )}
         </main>
 
         <aside className="sidebar right">
-          <RatingTable />
-          <div className="banner-box pulse">
-            <p>ПОЗВОНИ МОДЕМУ</p>
-            <p>0-800-BRAIN-DEAD</p>
+          <div className="rating-table">
+            <h3>ТАБЛИЦА ЛИДЕРОВ</h3>
+            <table>
+              <thead><tr><th>Место</th><th>Имя</th><th>IQ</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>local</td><td>999</td></tr>
+                <tr><td>2</td><td>мама админа</td><td>0</td></tr>
+                <tr className="current-user-row"><td>999</td><td>ТЫ</td><td>???</td></tr>
+              </tbody>
+            </table>
           </div>
-          <div className="ascii-ad">
-            <pre>
-              {`
-  /\\_/\\  
- ( o.o ) 
-  > ^ <  
-              `}
-            </pre>
-            <p>KOTIK.JPG</p>
-          </div>
-          <div className="friend-links">
-            <p>ДРУЗЬЯ САЙТА:</p>
-            <marquee direction="up" scrollamount="1" height="50">
-              <p>nACTA_CTACA</p>
-              <p>nACTA_CTACA</p>
-              <p>nACTA_CTACA</p>
-              <p>nACTA_CTACA</p>
-              <p>nACTA_CTACA</p>
-              <p>nACTA_CTACA</p>
-              <p>nACTA_CTACA</p>
-              <p>nACTA_CTACA</p>
-              <p>nACTA_CTACA</p>
-            </marquee>
-          </div>
+          <div className="banner-box pulse"><p>ПОЗВОНИ МОДЕМУ</p></div>
         </aside>
       </div>
 
       <footer className="site-footer">
-        <marquee behavior="alternate">
-          ЛУЧШЕ ВСЕГО РАБОТАЕТ В INTERNET EXPLORER 6.0 | (C) 2003 LOCAL-PSYHOZ COMPANY ALL COPIRATED
-        </marquee>
+        <marquee behavior="alternate">ЛУЧШЕ ВСЕГО РАБОТАЕТ В INTERNET EXPLORER 6.0 | (C) 2003 LOCAL-PSYHOZ</marquee>
       </footer>
 
       <FakePopup />
-      
-      <div className="notifications-container">
-        {notifications.map(n => (
-          <SystemNotification 
-            key={n.id} 
-            title={n.title}
-            message={n.message} 
-            onClose={() => removeNotification(n.id)} 
-          />
-        ))}
-      </div>
-
-      {activeVideo && (
-        <div className="video-overlay">
-          <VintageVideoPlayer url={activeVideo} />
-        </div>
-      )}
+      {notifications.map(n => (
+        <SystemNotification key={n.id} {...n} onClose={() => removeNotification(n.id)} />
+      ))}
+      {activeVideo && <div className="video-overlay"><VintageVideoPlayer url={activeVideo} /></div>}
     </div>
   );
 };
-
-const RatingTable = () => (
-  <div className="rating-table">
-    <h3>ТАБЛИЦА ЛИДЕРОВ</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Место</th>
-          <th>Имя</th>
-          <th>IQ</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>local</td>
-          <td>999</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>мама админа</td>
-          <td>0</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>PSYHOZ</td>
-          <td>999</td>
-        </tr>
-        <tr className="current-user-row">
-          <td>999</td>
-          <td>ТЫ</td>
-          <td>???</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-);
 
 export default App;
