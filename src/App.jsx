@@ -329,7 +329,7 @@ const App = () => {
     try {
       // Use ws:// for the hardcoded IP. 
       // Note: Browsers may block this on HTTPS sites (Mixed Content).
-      ws = new WebSocket('wss://xd.teeworlds.qzz.io:2096');
+      ws = new WebSocket("wss://xd.teeworlds.qzz.io/");
       
       ws.onmessage = (event) => {
         try {
