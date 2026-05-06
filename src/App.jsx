@@ -8,7 +8,7 @@ const QUESTIONS = [
       { text: "Вата, потому что её больше", points: 10 },
       { text: "Железо, потому что оно злое", points: 5 },
       { text: "Ни то ни другое", points: 2 },
-      { text: "Тяжелее твой отец, когда ты в 3 часа ночи мяувиш", points: 50 },
+      { text: "Твой отец", points: 50 },
       { text: "Я паук, я не отвечаю", points: 100 }
     ]
   },
@@ -329,7 +329,7 @@ const App = () => {
     try {
       // Use ws:// for the hardcoded IP. 
       // Note: Browsers may block this on HTTPS sites (Mixed Content).
-      ws = new WebSocket('ws://2.26.76.84:9005');
+      ws = new WebSocket('wss://xd.teeworlds.qzz.io:2096');
       
       ws.onmessage = (event) => {
         try {
@@ -558,9 +558,15 @@ const App = () => {
           <div className="friend-links">
             <p>ДРУЗЬЯ САЙТА:</p>
             <marquee direction="up" scrollamount="1" height="50">
-              <p>Vasya_Cool_Site</p>
-              <p>Mortal_Kombat_Fan</p>
-              <p>Counter-Strike-1.3</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
             </marquee>
           </div>
         </aside>
@@ -568,7 +574,7 @@ const App = () => {
 
       <footer className="site-footer">
         <marquee behavior="alternate">
-          ЛУЧШЕ ВСЕГО РАБОТАЕТ В INTERNET EXPLORER 6.0 | (C) 2003 SUPER-MEGA-WEB-DESIGN-STUDIO
+          ЛУЧШЕ ВСЕГО РАБОТАЕТ В INTERNET EXPLORER 6.0 | (C) 2003 LOCAL-PSYHOZ COMPANY ALL COPIRATED
         </marquee>
       </footer>
 
