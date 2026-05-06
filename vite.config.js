@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // This ensures assets are linked relatively for GitHub Pages
+  base: '/pasta-iqtest/', // Project site on GitHub Pages
 })
