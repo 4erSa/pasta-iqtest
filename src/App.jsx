@@ -479,7 +479,7 @@ const App = () => {
 
   useEffect(() => {
     // Connect to the remote server IP
-    const ws = new WebSocket('ws://2.26.76.84:9005');
+    const ws = new WebSocket('wss://2.26.76.84:9005');
     
     ws.onmessage = (event) => {
       const data = JSON.parse(event.data);
