@@ -458,7 +458,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .vmp-container {
-  width: 500px;
+  width: 800px;
   background: #c0c0c0;
   border: 2px solid #fff;
   border-right-color: #444;

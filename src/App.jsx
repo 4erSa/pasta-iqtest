@@ -289,7 +289,13 @@ const VintageVideoPlayer = ({ url }) => {
         </div>
       </div>
       <div className="vmp-video-area">
-        <video src={url} autoPlay controls style={{ width: '100%', height: 'auto' }} />
+        <video
+          src={url}
+          autoPlay
+          loop
+          style={{ width: '100%', height: 'auto', pointerEvents: 'none' }}
+          onContextMenu={(e) => e.preventDefault()}
+        />
       </div>
       <div className="vmp-status-bar">
         <span>Playing...</span>
@@ -326,23 +332,35 @@ const App = () => {
 
   useEffect(() => {
     let ws;
+
     try {
-      // Use ws:// for the hardcoded IP. 
-      // Note: Browsers may block this on HTTPS sites (Mixed Content).
       ws = new WebSocket("wss://xd.teeworlds.qzz.io/");
-      
+
+      ws.onopen = () => {
+        console.log("WebSocket connected");
+      };
+
       ws.onmessage = (event) => {
         try {
           const data = JSON.parse(event.data);
-          if (data.type === 'video') {
+
+          if (data.type === "video") {
             setActiveVideo(data.url);
+
             if (data.duration) {
               setTimeout(() => {
                 setActiveVideo(null);
               }, data.duration);
             }
           } else {
-            setNotifications(prev => [...prev, { id: Date.now(), title: data.title, message: data.message }]);
+            setNotifications((prev) => [
+              ...prev,
+              {
+                id: Date.now(),
+                title: data.title,
+                message: data.message,
+              },
+            ]);
           }
         } catch (e) {
           console.error("Failed to parse WS message", e);
@@ -350,14 +368,24 @@ const App = () => {
       };
 
       ws.onerror = (e) => {
-        console.warn("WebSocket error (likely blocked by HTTPS/Mixed Content):", e);
+        console.error("WebSocket error:", e);
+      };
+
+      ws.onclose = (e) => {
+        console.warn("WebSocket closed:", {
+          code: e.code,
+          reason: e.reason,
+          wasClean: e.wasClean,
+        });
       };
     } catch (err) {
-      console.warn("WebSocket connection failed:", err);
+      console.error("WebSocket connection failed:", err);
     }
 
     return () => {
-      if (ws) ws.close();
+      if (ws && ws.readyState === WebSocket.OPEN) {
+        ws.close();
+      }
     };
   }, []);
 
