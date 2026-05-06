@@ -544,10 +544,15 @@ const App = () => {
   };
 
   const calculateResult = () => {
-    // Arbitrary calculation
-    const baseIq = 50;
-    const randomFactor = Math.floor(Math.random() * 40) - 20;
-    const finalIq = Math.floor((score / 10) + baseIq + randomFactor);
+    const maxScore = QUESTIONS.length * 200; // максимум (примерно)
+    const minScore = QUESTIONS.length * -50; // минимум (примерно)
+
+  // нормализация в диапазон 0–1
+    const normalized = (score - minScore) / (maxScore - minScore);
+
+  // перевод в IQ диапазон
+    const finalIq = Math.floor(60 + normalized * 100);
+
     setIqResult(finalIq);
     setStep('result');
   };
