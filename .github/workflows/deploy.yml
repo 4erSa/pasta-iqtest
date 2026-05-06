@@ -24,6 +24,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: Debug - List dist contents
+        run: find dist -type f | sort
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
