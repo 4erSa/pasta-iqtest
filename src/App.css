@@ -1,16 +1,25 @@
 /* IQ TEST 2003 DELUXE EDITION - CSS OF DOOM */
 
-body {
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+body {
   background-color: #000;
   color: #0f0;
   font-family: "Courier New", Courier, monospace;
-  overflow-x: hidden;
   background-image: linear-gradient(rgba(0, 255, 0, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 255, 0, 0.05) 1px, transparent 1px);
   background-size: 20px 20px;
-  border: 20px double #666;
+  border: 10px double #666;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Custom scrollbar for that extra cringe */
@@ -81,6 +90,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* CONTENT LAYOUT */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 20px); /* Subtracting body border (10px + 10px) */
+  width: 100%;
+}
+
 .content-wrapper {
   display: flex;
   flex: 1;
@@ -496,6 +512,7 @@ body::-webkit-scrollbar-thumb {
   border-top: 3px groove #fff;
   padding: 5px;
   font-size: 0.8rem;
+  margin-top: auto; /* Push to bottom */
 }
 
 /* RESPONSIVE (UGLY) */

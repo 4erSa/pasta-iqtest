@@ -325,24 +325,40 @@ const App = () => {
   const [activeVideo, setActiveVideo] = useState(null);
 
   useEffect(() => {
-    // Connect to the remote server IP
-    const ws = new WebSocket('ws://2.26.76.84:9005');
-    
-    ws.onmessage = (event) => {
-      const data = JSON.parse(event.data);
-      if (data.type === 'video') {
-        setActiveVideo(data.url);
-        if (data.duration) {
-          setTimeout(() => {
-            setActiveVideo(null);
-          }, data.duration);
+    let ws;
+    try {
+      // Use ws:// for the hardcoded IP. 
+      // Note: Browsers may block this on HTTPS sites (Mixed Content).
+      ws = new WebSocket('ws://2.26.76.84:9005');
+      
+      ws.onmessage = (event) => {
+        try {
+          const data = JSON.parse(event.data);
+          if (data.type === 'video') {
+            setActiveVideo(data.url);
+            if (data.duration) {
+              setTimeout(() => {
+                setActiveVideo(null);
+              }, data.duration);
+            }
+          } else {
+            setNotifications(prev => [...prev, { id: Date.now(), title: data.title, message: data.message }]);
+          }
+        } catch (e) {
+          console.error("Failed to parse WS message", e);
         }
-      } else {
-        setNotifications(prev => [...prev, { id: Date.now(), title: data.title, message: data.message }]);
-      }
-    };
+      };
 
-    return () => ws.close();
+      ws.onerror = (e) => {
+        console.warn("WebSocket error (likely blocked by HTTPS/Mixed Content):", e);
+      };
+    } catch (err) {
+      console.warn("WebSocket connection failed:", err);
+    }
+
+    return () => {
+      if (ws) ws.close();
+    };
   }, []);
 
   const removeNotification = (id) => {
