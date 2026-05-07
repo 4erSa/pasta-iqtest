@@ -700,9 +700,15 @@ const App = () => {
           <div className="friend-links">
             <p>ДРУЗЬЯ САЙТА:</p>
             <marquee direction="up" scrollamount="1" height="50">
-              <p>Vasya_Cool_Site</p>
-              <p>Mortal_Kombat_Fan</p>
-              <p>Counter-Strike-1.3</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
+              <p>nACTA_CTACA</p>
             </marquee>
           </div>
         </aside>
@@ -710,7 +716,7 @@ const App = () => {
 
       <footer className="site-footer">
         <marquee behavior="alternate">
-          ЛУЧШЕ ВСЕГО РАБОТАЕТ В INTERNET EXPLORER 6.0 | (C) 2003 SUPER-MEGA-WEB-DESIGN-STUDIO
+          ЛУЧШЕ ВСЕГО РАБОТАЕТ В INTERNET EXPLORER 6.0 | (C) 2003 PSYHOZ-LOCAL-STUDIO ALL COPIRATED
         </marquee>
       </footer>
 
